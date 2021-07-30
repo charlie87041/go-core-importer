@@ -22,7 +22,7 @@ var config Config
 
 func init() {
 	//os.Setenv("DATABASE_URL", "postgres://postgres:postgres@localhost:5432/b")
-	debugger = &defaultdebugger{isDebugEnabled: config.Debug, timer: time.Now(), status: 0, errors: make([]interface{}, 0)}
+	debugger = &defaultdebugger{isDebugEnabled: true, timer: time.Now(), status: 0, errors: make([]interface{}, 0)}
 
 	config.loadConfig()
 
